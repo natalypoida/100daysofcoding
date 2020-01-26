@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <link href="styles.css" rel="stylesheet" type="text/css" />
     </head>
+    
     <style>
         body {
             font-family: sans-serif;
@@ -26,10 +27,24 @@
             border-radius: 2px;
             text-decoration: none;
         }
-        #main-nav .featured {
+        .nav .featured {
             background-color: orange;
         }
-
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        .footer {
+            color: #666;
+            background-color: #ccc;
+            padding: 15 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: inherit;
+            text-decoration: underline;
+        }
         
             
         
@@ -46,4 +61,8 @@
                 </ul>
             </nav>
         </header>
+        <footer class="footer">
+            &copy; 2019 Профессиональная техника для обжарщиков &mdash;
+            <a href="">Условия эксплуатации</а>
+        </footer>
     </body>
