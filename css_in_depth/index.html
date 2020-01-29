@@ -5,6 +5,9 @@
     </head>
     
     <style>
+        :root {
+            font-size: 0.875em;
+        }
         body {
             font-family: sans-serif;
         }
@@ -49,8 +52,21 @@
             color: initial;
             text-decoration: underline;
         }
-        
-            
+        .padded {
+            font-size: 16px;
+            padding: 1em;
+        }
+        .panel {
+            padding: 1em;
+            border-radius: 0.5em;
+            border: 1px solid #999;
+        } 
+        .panel > h2 {
+            margin-top: 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
         
     </style>
     <body>
@@ -65,6 +81,20 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <div class="padded">
+                Утро начинается с хорошего кофе.
+            </div>
+            <div class="panel">
+                <h1>Моносорта</h1>
+                <div class="panel-body">
+                    Мы сотрудничаем с небольшими плантациями по всему миру, чтобы
+                    собирать зерна в пик сезона. Затем мы тщательно поджариваем зерна <a href="/batch-size.html">небольшими партиями</a>
+                    чтобы максимально раскрыть их потенциал.
+                </div>
+
+            </div>
+        </main>
         <footer class="footer">
             &copy; 2019 Профессиональная техника для обжарщиков &mdash;
             <a href="">Условия эксплуатации</а>
